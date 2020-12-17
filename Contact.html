@@ -59,8 +59,15 @@
                     <a class="nav-link" href="Contact.html">Contact</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="Resources.html">Resources</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item js-scroll-trigger" href="Resources.html#GitHub">GitHub</a>
+                        <a class="dropdown-item js-scroll-trigger" href="Resources.html#Features">Features</a>
+                        <a class="dropdown-item js-scroll-trigger" href="Resources.html#Laws">Laws</a>
+                    </div>
                 </li>
 
             </ul>
@@ -121,14 +128,9 @@
 
 
     <script>
-        function displayMessageEmpty() {
-            var send = document.getElementsByTagName("form");
-            alert("No message entered in the 'Message' box!");
-        }
-
         function displayEmailSend() {
             var send = document.getElementsByTagName("form");
-            alert("Email send!");
+            alert("Message is send! Ming will reply back as soon as possible");
         }
     </script>
 
