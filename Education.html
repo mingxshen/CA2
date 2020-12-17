@@ -35,6 +35,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item js-scroll-trigger" href="Education.html#college">College</a>
                         <a class="dropdown-item js-scroll-trigger" href="Education.html#result">Results</a>
+                        <a class="dropdown-item js-scroll-trigger" href="Education.html#skills">Skills</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item js-scroll-trigger" href="Education.html#project">Projects</a>
                     </div>
@@ -557,6 +558,144 @@
         </div>
 
 
+        <hr id="lineBreak">
+
+        <div id="ResultSection" class="m-5">
+            <h2><strong><a id="skills">Skills</a></strong></h2>
+
+            <ul class="nav nav-pills">
+                <li><a id="result4" class="btn btn-info" type="button" onclick="displaySkill('programmingL')" data-toggle="tab">Programming Languages</a></li>
+                <li><a id="result3" class="btn btn-info" type="button" onclick="displaySkill('tools')" data-toggle="tab">Tools</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" id="programmingL">
+                    <br />
+                    <table class="table table-striped">
+                        <thread>
+                            <tr>
+                                <td>
+                                    <strong>Languages</strong>
+                                </td>
+                                <td>
+                                    <strong>Level (1 = beginner, 10 = expert)</strong>
+                                </td>
+                            </tr>
+                        </thread>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    C#
+                                </td>
+                                <td>
+                                    8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    C++
+                                </td>
+                                <td>
+                                    7
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Python
+                                </td>
+                                <td>
+                                    6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Java
+                                </td>
+                                <td>
+                                    6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    SQL
+                                </td>
+                                <td>
+                                    5
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane" id="tools">
+                    <br />
+                    <table class="table table-striped">
+                        <thread>
+                            <tr>
+                                <td>
+                                    <strong>Tool</strong>
+                                </td>
+                                <td>
+                                    <strong>Level (1 = beginner, 10 = expert)</strong>
+                                </td>
+                            </tr>
+                        </thread>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Visual Studio 2019
+                                </td>
+                                <td>
+                                    8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Visual Studio Code
+                                </td>
+                                <td>
+                                    8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Eclipse
+                                </td>
+                                <td>
+                                    4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    NetBeans
+                                </td>
+                                <td>
+                                    5
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tableau
+                                </td>
+                                <td>
+                                    6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Git
+                                </td>
+                                <td>
+                                    7
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <br /><br />
+        </div>
+
+
 
 
         <hr id="lineBreak">
@@ -641,6 +780,16 @@
     </footer>
 
     <script>
+        function displaySkill(value) {
+            if (value == 'tools') {
+                $("#programmingL").hide();
+                $("#tools").show();
+            } else {
+                $("#programmingL").show();
+                $("#tools").hide();
+            }
+        }
+
         function projectInfo(id) {
             projectInfo(id);
         }

@@ -283,3 +283,11 @@ footer {
     clear: both;
     width: 60%;
 }
+
+#programmingL {
+    display: block;
+}
+
+#tools {
+    display: none;
+}
